@@ -1,0 +1,41 @@
+#https://jupyterbook.org/customize/toc.html
+# format: jb-book
+# root: index
+# parts:
+  # - caption: Name of Part 1
+    # chapters:
+    # - file: path/to/part1/chapter1
+    # - file: path/to/part1/chapter2
+      # sections:
+      # - file: path/to/part1/chapter2/section1
+  # - caption: Name of Part 2
+    # chapters:
+    # - file: path/to/part2/chapter1
+    # - file: path/to/part2/chapter2
+      # sections:
+      # - file: path/to/part2/chapter2/section1
+
+
+# format: jb-book
+# root: index
+# chapters:
+# - file: path/to/chapter1
+# - url: https://example.com
+  # title: Example website
+# - glob: subfolder/other*
+
+
+format: jb-book
+root: intro
+parts:
+  - caption: 1. Python reference
+    chapters:
+    - file: image_examples
+    - file: HW2
+  - caption: 2. Default pages
+    chapters:
+    - file: markdown
+    - file: notebooks
+    - url: https://example.com
+      title: Example website
+    - glob: pages
