@@ -1,0 +1,1679 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2 &#8212; My sample book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+    <link rel="prev" title="Embed images in Jupyter NB" href="image_examples.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  1. Python reference
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="image_examples.html">
+   Embed images in Jupyter NB
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Homework 2
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  2. Default pages
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://example.com">
+   Example website
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/HW2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/HW2.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-a">
+   Part (a)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-b">
+   Part (b)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#robustness">
+     Robustness
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rapidity">
+     Rapidity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-c">
+   Part (c)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-d">
+   Part (d)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-e">
+   Part (e)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-f">
+   Part (f)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-g">
+   Part (g)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Homework 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-a">
+   Part (a)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-b">
+   Part (b)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#robustness">
+     Robustness
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rapidity">
+     Rapidity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-c">
+   Part (c)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-d">
+   Part (d)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-e">
+   Part (e)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-f">
+   Part (f)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-g">
+   Part (g)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="homework-2">
+<h1>Homework 2<a class="headerlink" href="#homework-2" title="Permalink to this headline">¶</a></h1>
+<p>Student: Anibal Tafur</p>
+<p>Date: Feb 8, 2022</p>
+<div class="section" id="part-a">
+<h2>Part (a)<a class="headerlink" href="#part-a" title="Permalink to this headline">¶</a></h2>
+<p>Load the csv file and then plot the recovery patterns for all damage options.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Preamble</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Loading csv file</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;/content/drive/MyDrive/sync/Infrastructure Resilience/&#39;</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="o">+</span><span class="s1">&#39;functionality.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Labeling Damage States for easier reference</span>
+
+<span class="c1"># DS_1 = Slight Damage</span>
+<span class="c1"># DS_2 = Moderate Damage</span>
+<span class="c1"># DS_3 = Extensive Damage</span>
+<span class="c1"># DS_4 = Complete Damage without Idle time</span>
+<span class="c1"># DS_5 = Complete Damage with Idle time</span>
+
+<span class="c1"># Extracting data as lists (arrays) and labeling according to DS, removing null values:</span>
+
+<span class="n">T1</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time, t (months).4&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Functionality, Q(t).4&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+
+<span class="n">T2</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time, t (months).3&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+<span class="n">Q2</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Functionality, Q(t).3&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+
+<span class="n">T3</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time, t (months).1&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Functionality, Q(t).1&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+
+<span class="n">T4</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time, t (months)&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+<span class="n">Q4</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Functionality, Q(t)&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+
+<span class="n">T5</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Time, t (months).2&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+<span class="n">Q5</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Functionality, Q(t).2&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+
+<span class="c1"># Plotting:</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T1</span><span class="p">,</span><span class="n">Q1</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;DS1=Slight&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T2</span><span class="p">,</span><span class="n">Q2</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;DS2=Moderate&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T3</span><span class="p">,</span><span class="n">Q3</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;DS3=Extensive&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T4</span><span class="p">,</span><span class="n">Q4</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;DS4=Complete w/o IT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">T5</span><span class="p">,</span><span class="n">Q5</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;DS5=Complete w/ IT&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time $t$ (months)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Functionality $Q(t)$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fig. 1. Functionality curves for different DS&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_4_0.png" src="_images/HW2_4_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="part-b">
+<h2>Part (b)<a class="headerlink" href="#part-b" title="Permalink to this headline">¶</a></h2>
+<p>For each damage option, calculate the deterministic robustness and rapidity. You can find the definitions of robustness and rapidity in the class notes.</p>
+<div class="section" id="robustness">
+<h3>Robustness<a class="headerlink" href="#robustness" title="Permalink to this headline">¶</a></h3>
+<p>As defined by NIST, robustness is the inherent strength or resistance in a system to withstand external demands without degradation or loss of functionality (Gilbert et al., 2005). Mathematically, given the functionality curve <span class="math notranslate nohighlight">\(Q(t)\)</span> for a time horizon after a disruptive event, the robustness <span class="math notranslate nohighlight">\(Rb\)</span> is defined as:</p>
+<div class="math notranslate nohighlight">
+\[Rb = 1 - L\]</div>
+<p>Where <span class="math notranslate nohighlight">\(L\)</span> is the initial loss of functionary right after the event. This is ilustrated in Figure 1.</p>
+<p>![image.png](data:image/png;base64,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)</p>
+<p>Fig. 2. Definition of Robustness (Source: Class notes)</p>
+<p>Calculating <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(Rb\)</span> for all damage states, we have.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Defining dataframe to store results</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">results</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;DS&#39;</span>
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Slight&#39;</span><span class="p">,</span><span class="s1">&#39;Moderate&#39;</span><span class="p">,</span><span class="s1">&#39;Extensive&#39;</span><span class="p">,</span><span class="s1">&#39;Complete w/o IT&#39;</span><span class="p">,</span><span class="s1">&#39;Complete w/ IT&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extracting initial functionality loss (L) for all DS</span>
+
+<span class="n">L_arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">Qt</span> <span class="ow">in</span> <span class="p">[</span><span class="n">Q1</span><span class="p">,</span><span class="n">Q2</span><span class="p">,</span><span class="n">Q3</span><span class="p">,</span><span class="n">Q4</span><span class="p">,</span><span class="n">Q5</span><span class="p">]:</span>
+    <span class="n">L_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">Qt</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;L&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">L_arr</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculating the residual functionality after the event</span>
+<span class="c1"># Rb = Robustness </span>
+
+<span class="n">Rb_arr</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">L_arr</span><span class="p">)</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rb&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Rb_arr</span>
+<span class="n">results</span><span class="p">[[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">,</span><span class="s1">&#39;L&#39;</span><span class="p">,</span><span class="s1">&#39;Rb&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-0ec88ef6-88fa-4981-b019-eafbbdc325e4">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DS_desc</th>
+      <th>L</th>
+      <th>Rb</th>
+    </tr>
+    <tr>
+      <th>DS</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Slight</td>
+      <td>0.253247</td>
+      <td>0.746753</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Moderate</td>
+      <td>0.746753</td>
+      <td>0.253247</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Extensive</td>
+      <td>0.900000</td>
+      <td>0.100000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Complete w/o IT</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Complete w/ IT</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0ec88ef6-88fa-4981-b019-eafbbdc325e4')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-0ec88ef6-88fa-4981-b019-eafbbdc325e4 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-0ec88ef6-88fa-4981-b019-eafbbdc325e4');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting results</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">],</span><span class="n">height</span><span class="o">=</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rb&#39;</span><span class="p">],</span><span class="n">width</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Damage State&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Robustness $Rb$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fig. 3. Robustness $Rb$ for different DS&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_12_0.png" src="_images/HW2_12_0.png" />
+</div>
+</div>
+<p><strong>Discussion</strong></p>
+<p>From Figure 3 it is clearly observed the complete lack of robustness of both complete damage states, losing all functionality  after the disruption.</p>
+</div>
+<div class="section" id="rapidity">
+<h3>Rapidity<a class="headerlink" href="#rapidity" title="Permalink to this headline">¶</a></h3>
+<p>As defined by NIST, rapidity is the speed with which disruption can be overcome and safety, services, and financial stability restored (Gilbert et al., 2005). Mathematically, rapidity <span class="math notranslate nohighlight">\(Rd\)</span> in this report is estimated as the ratio of immediate loss of functionality <span class="math notranslate nohighlight">\(L\)</span> to the recovery time <span class="math notranslate nohighlight">\(T_{RE}\)</span></p>
+<div class="math notranslate nohighlight">
+\[Rd = \frac{L}{T_{RE}}\]</div>
+<p>To estimate a deterministic value for rapidity, it is necessary to determine the recovery time <span class="math notranslate nohighlight">\(T_{RE}\)</span>. In principle, <span class="math notranslate nohighlight">\(T_{RE}\)</span> is defined as the time required to achieve complete functionality restoration, thus <span class="math notranslate nohighlight">\(Q(T_{RE})=1\)</span>. Nevertheless, observing the data provided for this assigment (Figure 1), it is appreciated that for DS1 (Slight Damage), an important fraction of the functionality is restored much earlier than reaching complete pre-event functionality.</p>
+<p>Therefore, a threshold value of functionality <span class="math notranslate nohighlight">\(Q_{min}\)</span> is utilized to define <span class="math notranslate nohighlight">\(T_{RE}\)</span>, to represent rapidity in a more realistic manner. Hereafter, <span class="math notranslate nohighlight">\(T_{RE}\)</span> is defined as follows.</p>
+<div class="math notranslate nohighlight">
+\[Q(T_{RE}) \geq Q_{min}\]</div>
+<p>For this report, a referencial value of <span class="math notranslate nohighlight">\(Q_{min}\)</span> = 0.98 is considered. To illustrate the difference in Rapidity values considering different thresholds of functionality, rapidity values are compared to those obtained considering <span class="math notranslate nohighlight">\(Q_{min}\)</span> = 1.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Defining a function to obtain recovery time from a recovery curve:</span>
+
+<span class="k">def</span> <span class="nf">get_recovery_time</span><span class="p">(</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">,</span><span class="n">threshold</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    T_arr = list of time values of recovery curve</span>
+<span class="sd">    Q_arr = list of Q(t) values of recovery curve</span>
+<span class="sd">    threshold = minimum functionality value considered for complete recovery</span>
+
+<span class="sd">    Returns Tre = recovery time calculated as the time where the first value of Q(t)</span>
+<span class="sd">    exceeds the defined threshold</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">pos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">T_arr</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">Q_arr</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">threshold</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">T_arr</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span>
+            <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculating recovery time Tre for threshold = 0.98</span>
+
+<span class="n">threshold</span> <span class="o">=</span> <span class="mf">0.98</span>
+
+<span class="n">Tre_arr</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">T1</span><span class="p">,</span><span class="n">Q1</span><span class="p">),(</span><span class="n">T2</span><span class="p">,</span><span class="n">Q2</span><span class="p">),(</span><span class="n">T3</span><span class="p">,</span><span class="n">Q3</span><span class="p">),(</span><span class="n">T4</span><span class="p">,</span><span class="n">Q4</span><span class="p">),(</span><span class="n">T5</span><span class="p">,</span><span class="n">Q5</span><span class="p">)]:</span>
+    <span class="n">Tre</span> <span class="o">=</span> <span class="n">get_recovery_time</span><span class="p">(</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">,</span><span class="n">threshold</span><span class="p">)</span>
+    <span class="n">Tre_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Tre</span><span class="p">)</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Tre_arr</span>
+
+<span class="c1"># Calculating rapidity Rd for threshold = 0.98</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rd&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;L&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculating recovery time for threshold = 1</span>
+
+<span class="n">threshold</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">Tre_arr_2</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[(</span><span class="n">T1</span><span class="p">,</span><span class="n">Q1</span><span class="p">),(</span><span class="n">T2</span><span class="p">,</span><span class="n">Q2</span><span class="p">),(</span><span class="n">T3</span><span class="p">,</span><span class="n">Q3</span><span class="p">),(</span><span class="n">T4</span><span class="p">,</span><span class="n">Q4</span><span class="p">),(</span><span class="n">T5</span><span class="p">,</span><span class="n">Q5</span><span class="p">)]:</span>
+    <span class="n">Tre</span> <span class="o">=</span> <span class="n">get_recovery_time</span><span class="p">(</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">,</span><span class="n">threshold</span><span class="p">)</span>
+    <span class="n">Tre_arr_2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Tre</span><span class="p">)</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre_2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Tre_arr_2</span>
+
+<span class="c1"># Calculating rapidity Rd for threshold = 1</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rd_2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;L&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre_2&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Showing rapidity results</span>
+<span class="c1"># &#39;Tre_2&#39; and &#39;Rd_2&#39; correspond to values considering Qmin = 1</span>
+<span class="n">results</span><span class="p">[[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">,</span><span class="s1">&#39;L&#39;</span><span class="p">,</span><span class="s1">&#39;Tre&#39;</span><span class="p">,</span><span class="s1">&#39;Rd&#39;</span><span class="p">,</span><span class="s1">&#39;Tre_2&#39;</span><span class="p">,</span><span class="s1">&#39;Rd_2&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-500999e0-85db-4cd8-8917-a32958638324">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DS_desc</th>
+      <th>L</th>
+      <th>Tre</th>
+      <th>Rd</th>
+      <th>Tre_2</th>
+      <th>Rd_2</th>
+    </tr>
+    <tr>
+      <th>DS</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Slight</td>
+      <td>0.253247</td>
+      <td>3.843417</td>
+      <td>0.065891</td>
+      <td>10.000000</td>
+      <td>0.025325</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Moderate</td>
+      <td>0.746753</td>
+      <td>5.658363</td>
+      <td>0.131973</td>
+      <td>10.000000</td>
+      <td>0.074675</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Extensive</td>
+      <td>0.900000</td>
+      <td>7.153025</td>
+      <td>0.125821</td>
+      <td>7.153025</td>
+      <td>0.125821</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Complete w/o IT</td>
+      <td>1.000000</td>
+      <td>8.256227</td>
+      <td>0.121121</td>
+      <td>8.327402</td>
+      <td>0.120085</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Complete w/ IT</td>
+      <td>1.000000</td>
+      <td>8.238434</td>
+      <td>0.121382</td>
+      <td>10.000000</td>
+      <td>0.100000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-500999e0-85db-4cd8-8917-a32958638324')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-500999e0-85db-4cd8-8917-a32958638324 button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-500999e0-85db-4cd8-8917-a32958638324');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting results</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">])</span>
+
+<span class="n">sample1</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rd&#39;</span><span class="p">]</span>
+<span class="n">sample2</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rd_2&#39;</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span> <span class="c1"># the label locations</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.35</span>  <span class="c1"># the width of the bars</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">rects1</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">sample1</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Qmin = 0.98&#39;</span><span class="p">)</span>
+<span class="n">rects2</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">sample2</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Qmin = 1.00&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Rapidity $Rd$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Damage State&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Fig. 4. Rapidity for threshold values of 0.98 and 1&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">set_figwidth</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_19_0.png" src="_images/HW2_19_0.png" />
+</div>
+</div>
+<p><strong>Discussion</strong></p>
+<p>For the case of DS1 (Slight) and DS2 (Moderate), it is observed a substantial difference between rapidity estimations considering different values of <span class="math notranslate nohighlight">\(Q_{min}\)</span>. In contrast, for the rest of DS, the difference is not as considerable. In conclusion, recovery times need to consider adequate functionality threshold values, since the term “recovery” can be subjective and dependant on the type of system analyzed. Also, as observed in this case,  small differences in the considered <span class="math notranslate nohighlight">\(Q_{min}\)</span> can lead to dramatically differente rapidity estimations.</p>
+</div>
+</div>
+<div class="section" id="part-c">
+<h2>Part (c)<a class="headerlink" href="#part-c" title="Permalink to this headline">¶</a></h2>
+<p>For each damage option, calculate the resilience index using the idea of resilience triangle.</p>
+<p><strong>Solution</strong></p>
+<p>For this report, resilience triangle <span class="math notranslate nohighlight">\(Rt\)</span> is defined using the variables observed in Figure 2, loss of functionality <span class="math notranslate nohighlight">\(L\)</span> and recovery time <span class="math notranslate nohighlight">\(T_{RE}\)</span>, as follows.</p>
+<div class="math notranslate nohighlight">
+\[R_t = \frac {L \,\, T_{RE}}{2} \]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Triangle area will be Rt = L*Tre/2</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rt&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;L&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">results</span><span class="p">[[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">,</span><span class="s1">&#39;L&#39;</span><span class="p">,</span><span class="s1">&#39;Tre&#39;</span><span class="p">,</span><span class="s1">&#39;Rt&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-a5f0286a-97fc-4908-85a0-a0223d7a692c">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DS_desc</th>
+      <th>L</th>
+      <th>Tre</th>
+      <th>Rt</th>
+    </tr>
+    <tr>
+      <th>DS</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Slight</td>
+      <td>0.253247</td>
+      <td>2.971530</td>
+      <td>0.376265</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Moderate</td>
+      <td>0.746753</td>
+      <td>5.569395</td>
+      <td>2.079482</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Extensive</td>
+      <td>0.900000</td>
+      <td>7.117438</td>
+      <td>3.202847</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Complete w/o IT</td>
+      <td>1.000000</td>
+      <td>8.256227</td>
+      <td>4.128114</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Complete w/ IT</td>
+      <td>1.000000</td>
+      <td>8.238434</td>
+      <td>4.119217</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-a5f0286a-97fc-4908-85a0-a0223d7a692c')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-a5f0286a-97fc-4908-85a0-a0223d7a692c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-a5f0286a-97fc-4908-85a0-a0223d7a692c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting results</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">],</span><span class="n">height</span><span class="o">=</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rt&#39;</span><span class="p">],</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Damage State&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Resilience $Rt$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fig. 5. Triangle Resilience $Rt$ for different Damage States&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_23_0.png" src="_images/HW2_23_0.png" />
+</div>
+</div>
+<p><strong>Discussion</strong></p>
+<p>Triangle resilience <span class="math notranslate nohighlight">\(Rt\)</span> measures resilience taking into consideration the amount of damage sustained and the rapidity of the recovery. It is thefore expected that for DS1 (Slight), the resilience value is considerable lower than those of other DS, since the loss of functionality sustained is substantially lower. It is also observed that for the complete damage states (DS4 and DS5), values of <span class="math notranslate nohighlight">\(Rt\)</span> are practically equal despite their different recovery paths, since their parameters <span class="math notranslate nohighlight">\(L\)</span> and <span class="math notranslate nohighlight">\(T_{RE}\)</span> are similar.</p>
+</div>
+<div class="section" id="part-d">
+<h2>Part (d)<a class="headerlink" href="#part-d" title="Permalink to this headline">¶</a></h2>
+<p>For each damage option, calculate the resilience index based on Bruneau et al. (2003) definition.</p>
+<p><strong>Solution</strong></p>
+<p>According to  Bruneau et al. (2003), resilience <span class="math notranslate nohighlight">\(R_1\)</span> is estimated as follows:</p>
+<div class="math notranslate nohighlight">
+\[R_1 = \int_{t_0}^{t_r}{[1 - Q(t)]}dt\]</div>
+<p>For our case, <span class="math notranslate nohighlight">\(t_0\)</span> = 0 for all damage states, and <span class="math notranslate nohighlight">\(t_r\)</span> = <span class="math notranslate nohighlight">\(T_{RE}\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculating resilience R1 based on Bruneau et al. (2003)</span>
+
+<span class="n">R1_arr</span><span class="o">=</span><span class="p">[]</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">DS</span><span class="p">,</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="n">T1</span><span class="p">,</span><span class="n">Q1</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="n">T2</span><span class="p">,</span><span class="n">Q2</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="n">T3</span><span class="p">,</span><span class="n">Q3</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="n">T4</span><span class="p">,</span><span class="n">Q4</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="n">T5</span><span class="p">,</span><span class="n">Q5</span><span class="p">)]:</span>
+    
+    <span class="n">Tre</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">DS</span><span class="p">,</span><span class="s1">&#39;Tre&#39;</span><span class="p">]</span> <span class="c1"># Recovery time</span>
+    <span class="n">L</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">DS</span><span class="p">,</span><span class="s1">&#39;L&#39;</span><span class="p">]</span> <span class="c1"># Initial loss of functionality</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">T_arr</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">Tre</span><span class="p">)</span> <span class="c1"># Position of recovery time in array</span>
+
+    <span class="c1"># Integral from t = 0 up to t = Tre</span>
+    <span class="n">R1</span> <span class="o">=</span> <span class="mi">1</span><span class="o">*</span><span class="n">Tre</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">Q_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="n">T_arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">pos</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="n">R1_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">R1</span><span class="p">)</span>
+
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;R1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">R1_arr</span>
+
+<span class="c1"># Showing results</span>
+<span class="n">results</span><span class="p">[[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">,</span><span class="s1">&#39;Tre&#39;</span><span class="p">,</span><span class="s1">&#39;R1&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-55dab4c9-ba56-4d72-b819-6bc1508b404a">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DS_desc</th>
+      <th>Tre</th>
+      <th>R1</th>
+    </tr>
+    <tr>
+      <th>DS</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Slight</td>
+      <td>2.971530</td>
+      <td>0.601111</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Moderate</td>
+      <td>5.569395</td>
+      <td>2.875139</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Extensive</td>
+      <td>7.117438</td>
+      <td>5.755592</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Complete w/o IT</td>
+      <td>8.256227</td>
+      <td>7.290765</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Complete w/ IT</td>
+      <td>8.238434</td>
+      <td>5.140413</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-55dab4c9-ba56-4d72-b819-6bc1508b404a')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-55dab4c9-ba56-4d72-b819-6bc1508b404a button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-55dab4c9-ba56-4d72-b819-6bc1508b404a');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting results</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">],</span><span class="n">height</span><span class="o">=</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;R1&#39;</span><span class="p">],</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Damage State&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Resilience $R_1$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fig. 6. Resilience $R_1$ using definition by Bruneau et al. (2003)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_27_0.png" src="_images/HW2_27_0.png" />
+</div>
+</div>
+<p><strong>Discussion</strong></p>
+<p>For this case, it is appreciated a considerable difference in the <span class="math notranslate nohighlight">\(R_1\)</span> resilience values for the complete damage states (DS4 and DS5), reflecting their different recovery paths, contrary to what was observed using the triangle resilience <span class="math notranslate nohighlight">\(R_t\)</span>.</p>
+</div>
+<div class="section" id="part-e">
+<h2>Part (e)<a class="headerlink" href="#part-e" title="Permalink to this headline">¶</a></h2>
+<p>For each damage option, calculate the resilience index based on Frangopol and Bocchini (2011) definition.</p>
+<p><strong>Solution</strong></p>
+<p>According to  Frangopol and Bocchini (2011), resilience index <span class="math notranslate nohighlight">\(R_3\)</span> is defined as follows.</p>
+<div class="math notranslate nohighlight">
+\[R_3 = \frac{\int_{t_0}^{t_0+t_h}{Q(t)dt}}{t_h}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(t_h\)</span> is the time horizon for the analysis. For this report, <span class="math notranslate nohighlight">\(t_h\)</span> is considered as 10 months.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">th</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Time horizon for all damage states</span>
+
+<span class="n">R3_arr</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">DS</span><span class="p">,</span><span class="n">T_arr</span><span class="p">,</span><span class="n">Q_arr</span><span class="p">)</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="n">T1</span><span class="p">,</span><span class="n">Q1</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="n">T2</span><span class="p">,</span><span class="n">Q2</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="n">T3</span><span class="p">,</span><span class="n">Q3</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="n">T4</span><span class="p">,</span><span class="n">Q4</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="n">T5</span><span class="p">,</span><span class="n">Q5</span><span class="p">)]:</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">T_arr</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">th</span><span class="p">)</span>
+
+    <span class="c1"># Integrating over the time horizon period</span>
+    <span class="n">R3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">Q_arr</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">T_arr</span><span class="p">)</span> <span class="o">/</span> <span class="n">th</span>
+
+    <span class="n">R3_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">R3</span><span class="p">)</span>
+<span class="n">results</span><span class="p">[</span><span class="s1">&#39;R3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">R3_arr</span>
+
+<span class="c1"># Showing results</span>
+<span class="n">results</span><span class="p">[[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">,</span><span class="s1">&#39;R3&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-60e536be-ab33-4dc3-9ae5-ee948a23001c">
+    <div class="colab-df-container">
+      <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DS_desc</th>
+      <th>R3</th>
+    </tr>
+    <tr>
+      <th>DS</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Slight</td>
+      <td>0.935397</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Moderate</td>
+      <td>0.711565</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Extensive</td>
+      <td>0.424371</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Complete w/o IT</td>
+      <td>0.270877</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Complete w/ IT</td>
+      <td>0.485101</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-60e536be-ab33-4dc3-9ae5-ee948a23001c')"
+              title="Convert this dataframe to an interactive table."
+              style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+       width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"/>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
+  </svg>
+      </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-60e536be-ab33-4dc3-9ae5-ee948a23001c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-60e536be-ab33-4dc3-9ae5-ee948a23001c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting results</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">],</span><span class="n">height</span><span class="o">=</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;R3&#39;</span><span class="p">],</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Damage State&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Resilience $R_3$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fig. 7. Resilience $R_3$ using definition by Frangopol and Bocchini (2011)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_31_0.png" src="_images/HW2_31_0.png" />
+</div>
+</div>
+<p>** Discussion **</p>
+<p>It is observed that, in contrast to what was estimated using <span class="math notranslate nohighlight">\(R_t\)</span> and <span class="math notranslate nohighlight">\(R_1\)</span>, resilience values are considerably higher for less severe damage states. This is due to the different approaches followed in this methods, <span class="math notranslate nohighlight">\(R_t\)</span> and <span class="math notranslate nohighlight">\(R_1\)</span> consider the area over the curves, and <span class="math notranslate nohighlight">\(R_3\)</span> considers the area below. Another observation is that <span class="math notranslate nohighlight">\(R_3\)</span> is normalized by the time horizon, therefore, curves with different recovery times can be analyzed and compared.</p>
+<p>As additional discussion, Figure 8 shows normalized values of <span class="math notranslate nohighlight">\(R_t\)</span> and <span class="math notranslate nohighlight">\(R_1\)</span>, namely, <span class="math notranslate nohighlight">\(R'_t\)</span> and <span class="math notranslate nohighlight">\(R'_1\)</span>, which are then compared to the already normalized <span class="math notranslate nohighlight">\(R_3\)</span>. <span class="math notranslate nohighlight">\(R'_t\)</span> and <span class="math notranslate nohighlight">\(R'_1\)</span> are obtained by normalizing using the area <span class="math notranslate nohighlight">\(L\times T_{RE}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[R'_t = \frac{R_t}{L \, \, T_{RE}} \,,  R'_1 = \frac{R_1}{L \, \, T_{RE}}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting results</span>
+
+<span class="n">labels</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;DS_desc&#39;</span><span class="p">])</span>
+
+<span class="n">sample1</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;Rt&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;L&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre&#39;</span><span class="p">])</span>
+<span class="n">sample2</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;R1&#39;</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;L&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;Tre&#39;</span><span class="p">])</span>
+<span class="n">sample3</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;R3&#39;</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))</span> <span class="c1"># the label locations</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.25</span>  <span class="c1"># the width of the bars</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">rects1</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">width</span><span class="p">,</span> <span class="n">sample1</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$R&#39;_t$ (Triangle)&quot;</span><span class="p">)</span>
+<span class="n">rects2</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="p">,</span> <span class="n">sample2</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$R&#39;_1$ (Bruneau)&quot;</span><span class="p">)</span>
+<span class="n">rects3</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">width</span><span class="p">,</span> <span class="n">sample3</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$R_3$ (Frangopol)&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Normalized Resilience&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Damage State&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Fig. 8. Normalized resilience values for different definitions&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">set_figwidth</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_33_0.png" src="_images/HW2_33_0.png" />
+</div>
+</div>
+<p><strong>Discussion</strong></p>
+<p>There exists a considerable difference in resilience estimations using different approaches, due to the substantial different aproaches that they take. Nevertheless, similarities are found for triangle resilience <span class="math notranslate nohighlight">\(R_t\)</span> and <span class="math notranslate nohighlight">\(R_1\)</span> in the sense that they use the area over the functionality curve, as opossed to <span class="math notranslate nohighlight">\(R_3\)</span>. This explains the similar values of resilience index for DS5 (complete with idle time), since areas over and below its <span class="math notranslate nohighlight">\(Q(t)\)</span> curve are relatively similar. Another key difference of <span class="math notranslate nohighlight">\(R_3\)</span> is the normalization by time horizon for all the curves.</p>
+<p>In conclusion, these methods carry subjectivity in their approaches and definitons, and for application is real-life infrastructure systems, additional criteria related to the system characteristics and analysis objectives has to be taken into account to determine an adequate resilience measure.</p>
+</div>
+<div class="section" id="part-f">
+<h2>Part (f)<a class="headerlink" href="#part-f" title="Permalink to this headline">¶</a></h2>
+<p>Consider these two damage options: (I) Complete damage with idle time and (II) Complete damage without idle time. If we assume that the change in idle times does not impact the recovery path, what is the minimum idle time for Option (I) to have the resilience index lower than Option (II)?</p>
+<p><strong>Discussion</strong></p>
+<p>For this part, the resilience definition by Frangopol and Bocchini (2011) is used since, since this is the case where additional idle time would cause the resilience index to decrease. This is because this approach considers the area below the functionality curve.</p>
+<p>Figure 9 shows the relation between idle time and resilience for Option I, considering that the recovery path remains unaltered. The estimated resilience <span class="math notranslate nohighlight">\(R_3\)</span> calculated for Option II in Part (f) is shown over the plot.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using R3 definition Frangopol and Bocchini (2011)</span>
+<span class="c1"># Current idle time (Ti) for DS5: Ti = 2.0284698 months</span>
+<span class="c1"># Calculating Resilience for varios idle times (assuming no modification of recovery path):</span>
+
+<span class="n">Ti_arr</span> <span class="o">=</span> <span class="n">T5</span>
+
+<span class="n">Rmod_arr</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Storing resilience values</span>
+
+<span class="k">for</span> <span class="n">Ti</span> <span class="ow">in</span> <span class="n">Ti_arr</span><span class="p">:</span>
+
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">T5</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">Ti</span><span class="p">)</span> 
+
+    <span class="c1"># Integrating from t = Ti to t = 10</span>
+    <span class="n">Rmod</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">trapz</span><span class="p">(</span><span class="n">Q5</span><span class="p">[</span><span class="n">pos</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">Q5</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="n">T5</span><span class="p">[</span><span class="n">pos</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">Q5</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">Rmod_arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Rmod</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Ti_arr</span><span class="p">,</span><span class="n">Rmod_arr</span><span class="p">,</span><span class="s1">&#39;o-&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hlines</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">2.7087729613013662</span><span class="p">,</span><span class="n">xmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">xmax</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mf">2.8</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="s1">&#39;Resilience of damage state DS4 = 2.71&#39;</span><span class="p">,</span><span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span><span class="s1">&#39;red&#39;</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">11</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Idle time (months)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Resilience $R3$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fig. 9. Resilience for various idle times for complete damage state DS5&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/HW2_37_0.png" src="_images/HW2_37_0.png" />
+</div>
+</div>
+<p><strong>Discussion</strong></p>
+<p>It would take an idle time of at least 7 months for DS5 (Option I) to reach resilience less than 2.71, which was estimated for DS4 (Option II).</p>
+</div>
+<div class="section" id="part-g">
+<h2>Part (g)<a class="headerlink" href="#part-g" title="Permalink to this headline">¶</a></h2>
+<p>Discuss the results from Part (b) to Part (f).</p>
+<p><strong>Discussion</strong></p>
+<p>Results from  Part (b) and Part (f) show that for both options, rapidity and robustness are similar. Nevertheless, the difference in recovery paths cause resilience estimations to differ. More specifically, it would take an additional idle time of approximately 4.3 months for  Option I to have less resilience index than Option II.</p>
+<p>One possible explanation for the fact that having an idle time causes Option I to have larger resilience index than Option II is that this initial period with null functionality indicates that activities in this system are likely paralized, which would allow to accommodate potential restoration activities.</p>
+<p>On the other hand, in Option II, the system downtime is considerably shorter, although with very low functionality at the beggining of the recovery. In this case, restoration activities may be less efficient than Option I scenario, since operations (even at low functionality levels) are likely to interfer with restoration tasks.</p>
+<p>This might reflect in the shape of the recovery path, and consequently, in the resilince index estimation. For example, at month 1, activities are paralized for Option I but Option II presents functionality larger than 0, although very low. Nevertheless, by month 4, 40% of functionality is restored for Option I, compared to the 4% for Option II.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Bocchini, P., &amp; Frangopol, D. M. (2011). A probabilistic computational framework for bridge network optimal maintenance scheduling. Reliability Engineering &amp; System Safety, 96(2), 332-349.</p></li>
+<li><p>Bruneau, M., Chang, S. E., Eguchi, R. T., Lee, G. C., O’Rourke, T. D., Reinhorn, A. M., … &amp; Von Winterfeldt, D. (2003). A framework to quantitatively assess and enhance the seismic resilience of communities. Earthquake spectra, 19(4), 733-752.</p></li>
+<li><p>Gilbert, S. W., Butry, D. T., Helgeson, J. F., &amp; Chapman, R. E. (2015). Community resilience economic decision guide for buildings and infrastructure systems. NIST special publication, 1197.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>%%capture
+!jupyter nbconvert &#39;/content/drive/My Drive/sync/Infrastructure Resilience/HW2.ipynb&#39; --to html
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="image_examples.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Embed images in Jupyter NB</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="markdown.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Anibal Tafur<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        <p>
+... Add license info here...
+</p>
+
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
