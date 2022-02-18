@@ -1,0 +1,279 @@
+# Preamble
+import numpy as np
+import pandas as pd
+from matplotlib import pyplot as plt
+
+# Loading csv file
+path = '/content/drive/MyDrive/sync/Infrastructure Resilience/'
+data = pd.read_csv(path+'functionality.csv')
+
+# Labeling Damage States for easier reference
+
+# DS_1 = Slight Damage
+# DS_2 = Moderate Damage
+# DS_3 = Extensive Damage
+# DS_4 = Complete Damage without Idle time
+# DS_5 = Complete Damage with Idle time
+
+# Extracting data as lists (arrays) and labeling according to DS, removing null values:
+
+T1 = [item for item in data['Time, t (months).4'] if str(item) != 'nan']
+Q1 = [item for item in data['Functionality, Q(t).4'] if str(item) != 'nan']
+
+T2 = [item for item in data['Time, t (months).3'] if str(item) != 'nan']
+Q2 = [item for item in data['Functionality, Q(t).3'] if str(item) != 'nan']
+
+T3 = [item for item in data['Time, t (months).1'] if str(item) != 'nan']
+Q3 = [item for item in data['Functionality, Q(t).1'] if str(item) != 'nan']
+
+T4 = [item for item in data['Time, t (months)'] if str(item) != 'nan']
+Q4 = [item for item in data['Functionality, Q(t)'] if str(item) != 'nan']
+
+T5 = [item for item in data['Time, t (months).2'] if str(item) != 'nan']
+Q5 = [item for item in data['Functionality, Q(t).2'] if str(item) != 'nan']
+
+# Plotting:
+
+plt.figure(figsize=(10,6))
+plt.plot(T1,Q1,'o-',label='DS1=Slight')
+plt.plot(T2,Q2,'o-',label='DS2=Moderate')
+plt.plot(T3,Q3,'o-',label='DS3=Extensive')
+plt.plot(T4,Q4,'o-',label='DS4=Complete w/o IT')
+plt.plot(T5,Q5,'o-',label='DS5=Complete w/ IT')
+plt.xlabel('Time $t$ (months)')
+plt.ylabel('Functionality $Q(t)$')
+plt.title('Fig. 1. Functionality curves for different DS')
+plt.grid()
+plt.legend()
+plt.show()
+
+# Defining dataframe to store results
+results = pd.DataFrame(index=[1,2,3,4,5])
+results.index.name = 'DS'
+results['DS_desc']=['Slight','Moderate','Extensive','Complete w/o IT','Complete w/ IT']
+
+# Extracting initial functionality loss (L) for all DS
+
+L_arr = []
+for Qt in [Q1,Q2,Q3,Q4,Q5]:
+    L_arr.append(1-Qt[0])
+results['L'] = L_arr
+
+# Calculating the residual functionality after the event
+# Rb = Robustness 
+
+Rb_arr = 1 - np.array(L_arr)
+
+results['Rb'] = Rb_arr
+results[['DS_desc','L','Rb']]
+
+# Plotting results
+plt.figure(figsize=(8,4))
+plt.bar(results['DS_desc'],height=results['Rb'],width = 0.5)
+plt.xlabel('Damage State')
+plt.ylabel('Robustness $Rb$')
+plt.title('Fig. 3. Robustness $Rb$ for different DS')
+plt.grid(axis='y')
+plt.show()
+
+# Defining a function to obtain recovery time from a recovery curve:
+
+def get_recovery_time(T_arr,Q_arr,threshold):
+    '''
+    T_arr = list of time values of recovery curve
+    Q_arr = list of Q(t) values of recovery curve
+    threshold = minimum functionality value considered for complete recovery
+
+    Returns Tre = recovery time calculated as the time where the first value of Q(t)
+    exceeds the defined threshold
+    '''
+    for pos in range(len(T_arr)):
+        if Q_arr[pos] >= threshold:
+            return T_arr[pos]
+            break
+
+# Calculating recovery time Tre for threshold = 0.98
+
+threshold = 0.98
+
+Tre_arr = []
+for (T_arr,Q_arr) in [(T1,Q1),(T2,Q2),(T3,Q3),(T4,Q4),(T5,Q5)]:
+    Tre = get_recovery_time(T_arr,Q_arr,threshold)
+    Tre_arr.append(Tre)
+
+results['Tre'] = Tre_arr
+
+# Calculating rapidity Rd for threshold = 0.98
+
+results['Rd'] = results['L']/results['Tre']
+
+# Calculating recovery time for threshold = 1
+
+threshold = 1
+
+Tre_arr_2 = []
+
+for (T_arr,Q_arr) in [(T1,Q1),(T2,Q2),(T3,Q3),(T4,Q4),(T5,Q5)]:
+    Tre = get_recovery_time(T_arr,Q_arr,threshold)
+    Tre_arr_2.append(Tre)
+
+results['Tre_2'] = Tre_arr_2
+
+# Calculating rapidity Rd for threshold = 1
+
+results['Rd_2'] = results['L']/results['Tre_2']
+
+# Showing rapidity results
+# 'Tre_2' and 'Rd_2' correspond to values considering Qmin = 1
+results[['DS_desc','L','Tre','Rd','Tre_2','Rd_2']]
+
+# Plotting results
+
+labels = list(results['DS_desc'])
+
+sample1 = results['Rd']
+sample2 = results['Rd_2']
+
+x = np.arange(len(labels)) # the label locations
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots()
+rects1 = ax.bar(x - width/2, sample1, width, label='Qmin = 0.98')
+rects2 = ax.bar(x + width/2, sample2, width, label='Qmin = 1.00')
+
+ax.set_ylabel('Rapidity $Rd$')
+ax.set_xlabel('Damage State')
+ax.set_title('Fig. 4. Rapidity for threshold values of 0.98 and 1')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.legend()
+
+fig.set_figwidth(8)
+plt.grid(axis='y')
+plt.show()
+
+# Triangle area will be Rt = L*Tre/2
+
+results['Rt'] = results['L']*results['Tre']/2
+results[['DS_desc','L','Tre','Rt']]
+
+# Plotting results
+plt.figure(figsize=(8,4))
+plt.bar(results['DS_desc'],height=results['Rt'], width = 0.5)
+plt.xlabel('Damage State')
+plt.ylabel('Resilience $Rt$')
+plt.title('Fig. 5. Triangle Resilience $Rt$ for different Damage States')
+plt.grid(axis='y')
+plt.show()
+
+# Calculating resilience R1 based on Bruneau et al. (2003)
+
+R1_arr=[]
+
+for (DS,T_arr,Q_arr) in [(1,T1,Q1),(2,T2,Q2),(3,T3,Q3),(4,T4,Q4),(5,T5,Q5)]:
+    
+    Tre = results.at[DS,'Tre'] # Recovery time
+    L = results.at[DS,'L'] # Initial loss of functionality
+    pos = T_arr.index(Tre) # Position of recovery time in array
+
+    # Integral from t = 0 up to t = Tre
+    R1 = 1*Tre-np.trapz(Q_arr[0:pos+1], x=T_arr[0:pos+1])
+
+    R1_arr.append(R1)
+
+results['R1'] = R1_arr
+
+# Showing results
+results[['DS_desc','Tre','R1']]
+
+# Plotting results
+plt.figure(figsize=(8,4))
+plt.bar(results['DS_desc'],height=results['R1'], width = 0.5)
+plt.xlabel('Damage State')
+plt.ylabel('Resilience $R_1$')
+plt.title('Fig. 6. Resilience $R_1$ using definition by Bruneau et al. (2003)')
+plt.grid(axis='y')
+plt.show()
+
+th = 10 # Time horizon for all damage states
+
+R3_arr = []
+
+for (DS,T_arr,Q_arr) in [(1,T1,Q1),(2,T2,Q2),(3,T3,Q3),(4,T4,Q4),(5,T5,Q5)]:
+    pos = T_arr.index(th)
+
+    # Integrating over the time horizon period
+    R3 = np.trapz(Q_arr, x=T_arr) / th
+
+    R3_arr.append(R3)
+results['R3'] = R3_arr
+
+# Showing results
+results[['DS_desc','R3']]
+
+# Plotting results
+plt.figure(figsize=(8,4))
+plt.bar(results['DS_desc'],height=results['R3'], width = 0.5)
+plt.xlabel('Damage State')
+plt.ylabel('Resilience $R_3$')
+plt.title('Fig. 7. Resilience $R_3$ using definition by Frangopol and Bocchini (2011)')
+plt.grid(axis='y')
+plt.show()
+
+# Plotting results
+
+labels = list(results['DS_desc'])
+
+sample1 = results['Rt']/(results['L']*results['Tre'])
+sample2 = results['R1']/(results['L']*results['Tre'])
+sample3 = results['R3']
+
+x = np.arange(len(labels)) # the label locations
+width = 0.25  # the width of the bars
+
+fig, ax = plt.subplots()
+rects1 = ax.bar(x - width, sample1, width, label="$R'_t$ (Triangle)")
+rects2 = ax.bar(x , sample2, width, label="$R'_1$ (Bruneau)")
+rects3 = ax.bar(x + width, sample3, width, label="$R_3$ (Frangopol)")
+
+ax.set_ylabel('Normalized Resilience')
+ax.set_xlabel('Damage State')
+ax.set_title('Fig. 8. Normalized resilience values for different definitions')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.legend()
+
+fig.set_figwidth(8)
+plt.grid(axis='y')
+plt.show()
+
+# Using R3 definition Frangopol and Bocchini (2011)
+# Current idle time (Ti) for DS5: Ti = 2.0284698 months
+# Calculating Resilience for varios idle times (assuming no modification of recovery path):
+
+Ti_arr = T5
+
+Rmod_arr = [] # Storing resilience values
+
+for Ti in Ti_arr:
+
+    pos = T5.index(Ti) 
+
+    # Integrating from t = Ti to t = 10
+    Rmod = np.trapz(Q5[pos:len(Q5)+1], x=T5[pos:len(Q5)+1])
+    Rmod_arr.append(Rmod)
+
+# Plotting
+plt.figure(figsize=(8,5))
+plt.plot(Ti_arr,Rmod_arr,'o-')
+plt.hlines(y=2.7087729613013662,xmin=0,xmax=10,colors='red')
+plt.text(x=0,y=2.8,s='Resilience of damage state DS4 = 2.71',fontdict={'color':'red'})
+plt.xticks(np.arange(11))
+plt.grid()
+plt.xlabel('Idle time (months)')
+plt.ylabel('Resilience $R3$')
+plt.title('Fig. 9. Resilience for various idle times for complete damage state DS5')
+plt.show()
+
+%%capture
+!jupyter nbconvert '/content/drive/My Drive/sync/Infrastructure Resilience/HW2.ipynb' --to html
